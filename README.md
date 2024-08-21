@@ -23,3 +23,15 @@ Para realizar esta análise, utilizei as seguintes ferramentas e bibliotecas:
 - **Pandas**: Para manipulação e análise dos dados.
 - **Seaborn** e **Matplotlib**: Para criação de gráficos e visualizações.
 - **Kaggle Notebooks**: Um ambiente de desenvolvimento online que me permitiu rodar o projeto de forma eficiente.
+
+- # Análise da distribuição dos scores ESG
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.histplot(df['esg'], kde=True)
+plt.show()
+
+# Análise
+ Principais Insights
+• Distribuição dos Scores ESG: A maioria das empresas tem scores ESG variando entre 12 e 22, o que sugere um nível moderado de comprometimento com práticas sustentáveis.
+• Relação entre Número de Funcionários e Score ESG: Observou-se que empresas com mais funcionários tendem a ter scores ESG mais altos, sugerindo que empresas maiores podem estar mais atentas às práticas de sustentabilidade.
+• Comparação entre Scores Altman e ESG: Empresas com melhor saúde financeira, medidas pelo score Altman, também apresentaram scores ESG mais elevados, sugerindo uma possível correlação entre sustentabilidade e solidez financeira.
